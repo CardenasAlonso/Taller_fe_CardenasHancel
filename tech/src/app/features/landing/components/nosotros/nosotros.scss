@@ -1,0 +1,40 @@
+.nosotros-container {
+  padding: 4rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+
+  .title {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .descripcion {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 3rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+
+    .stat-card {
+      padding: 1.5rem 0;
+
+      .cifra {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #3f51b5;
+      }
+
+      .etiqueta {
+        margin-top: 0.5rem;
+        color: #666;
+      }
+    }
+  }
+}

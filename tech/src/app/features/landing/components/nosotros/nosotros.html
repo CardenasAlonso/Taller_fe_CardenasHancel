@@ -1,1 +1,15 @@
-<p>nosotros works!</p>
+<section id="nosotros" class="nosotros-container">
+  <h2 class="mat-headline-medium title">{{ tituloSeccion }}</h2>
+  <p class="descripcion">{{ descripcion }}</p>
+
+  <div class="stats-grid">
+    @for (stat of estadisticas; track stat.etiqueta) {
+      <mat-card class="stat-card" appearance="outlined">
+        <mat-card-content>
+          <span class="cifra">{{ stat.cifra }}</span>
+          <p class="etiqueta">{{ stat.etiqueta }}</p>
+        </mat-card-content>
+      </mat-card>
+    }
+  </div>
+</section>

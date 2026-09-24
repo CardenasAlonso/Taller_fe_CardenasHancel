@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  imports: [],
   selector: 'app-hero',
-  styleUrl: './hero.scss',
+  standalone: true,
+  imports: [MatButtonModule],
   templateUrl: './hero.html',
+  styleUrl: './hero.scss'
 })
-export class Hero {}
+export class Hero {
+  titulo: string = 'Impulsamos el Futuro Digital de tu Empresa';
+  subtitulo: string = 'Desarrollamos soluciones tecnológicas a medida, infraestructura en la nube y estrategias de Inteligencia Artificial.';
+}

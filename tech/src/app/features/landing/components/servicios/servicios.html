@@ -1,0 +1,22 @@
+<section class="servicios-container">
+  <h2 class="mat-headline-medium title">{{ tituloSeccion }}</h2>
+
+  <div class="cards-grid">
+    @for (servicio of servicios; track servicio.titulo) {
+    <mat-card class="servicio-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="icon-avatar" [innerHTML]="servicio.svgIcon"></div>
+        <mat-card-title>{{ servicio.titulo }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>{{ servicio.descripcion }}</p>
+      </mat-card-content>
+
+      <mat-card-actions align="end">
+        <button mat-button color="primary">Más información</button>
+      </mat-card-actions>
+    </mat-card>
+    }
+  </div>
+</section>

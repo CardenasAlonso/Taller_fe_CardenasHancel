@@ -1,0 +1,31 @@
+.footer-container {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 2rem 1.5rem;
+  margin-top: 3rem;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    p {
+      margin: 0;
+      color: #aaa;
+    }
+
+    .social-links a {
+      color: #ffffff;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

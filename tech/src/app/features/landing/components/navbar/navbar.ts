@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  imports: [],
   selector: 'app-navbar',
-  styleUrl: './navbar.scss',
+  standalone: true,
+  imports: [MatToolbarModule, MatButtonModule],
   templateUrl: './navbar.html',
+  styleUrl: './navbar.scss'
 })
-export class Navbar {}
+export class Navbar {
+  nombreAgencia: string = 'TechAgency';
+}
